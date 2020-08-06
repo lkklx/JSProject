@@ -1,0 +1,30 @@
+@import "variables";
+
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:0 20px;
+   
+
+    .product-item {
+        width: 256px;
+        padding: 10px;
+        
+        .product-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+        .product-title{
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+    }
+}
