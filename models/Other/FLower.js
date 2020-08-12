@@ -8,7 +8,7 @@ export class Flower {
     }
     get renderFlo() {
         return`
-        <section class="product-item">
+            <section class="product-item">
                 <img src = '${this.image}' alt='${this.title}'></img>
                     <h1 class="product-title">${this.title}</h1>
                     <div class="product-info">

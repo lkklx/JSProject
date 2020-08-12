@@ -145,7 +145,7 @@ var Flower = /*#__PURE__*/function () {
   _createClass(Flower, [{
     key: "renderFlo",
     get: function get() {
-      return "\n        <section class=\"product-item\">\n                <img src = '".concat(this.image, "' alt='").concat(this.title, "'></img>\n                    <h1 class=\"product-title\">").concat(this.title, "</h1>\n                    <div class=\"product-info\">\n                        <span>\n                            <strong>\n                                ").concat(this.price, " UAH\n                            </strong>\n                        </span>\n                        <span>\n                            <button class=\"buy-btn\" data-id='").concat(this.id, "'>BUY</button>\n                        </span>\n                    </div>\n            </section>\n        ");
+      return "\n            <section class=\"product-item\">\n                <img src = '".concat(this.image, "' alt='").concat(this.title, "'></img>\n                    <h1 class=\"product-title\">").concat(this.title, "</h1>\n                    <div class=\"product-info\">\n                        <span>\n                            <strong>\n                                ").concat(this.price, " UAH\n                            </strong>\n                        </span>\n                        <span>\n                            <button class=\"buy-btn\" data-id='").concat(this.id, "'>BUY</button>\n                        </span>\n                    </div>\n            </section>\n        ");
     }
   }]);
 
@@ -376,8 +376,11 @@ var Cart = /*#__PURE__*/function (_Flower) {
   }, {
     key: "renderSmallCart",
     get: function get() {
-      return "<stong> Cart: </strong>(".concat(this.totalPrice, " UAH, ").concat(this.quantityInCart, " qt) ");
+      return "<img src=\"./shopping-basket.png\" alt=\"\">\n        <stong> \n        Cart: </strong>(".concat(this.totalPrice, " UAH, ").concat(this.quantityInCart, " qt) ");
     }
+  }, {
+    key: "renerCart",
+    get: function get() {}
   }]);
 
   return Cart;
@@ -466,7 +469,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52675" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57201" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

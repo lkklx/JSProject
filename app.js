@@ -13,6 +13,7 @@ const catalog = new Catalog();
 catalog.loadProducts();
 productsContainer.innerHTML = catalog.productsRender;
 smallCartContainer.innerHTML = cart.renderSmallCart;
+
 //main
 
 //events

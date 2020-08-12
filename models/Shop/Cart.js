@@ -36,6 +36,11 @@ export class Cart extends Flower {
         return this.#products.reduce((price, p) => price + p.quantity * p.price, 0)
     }
     get renderSmallCart() {
-        return `<stong> Cart: </strong>(${this.totalPrice} UAH, ${this.quantityInCart} qt) `;
+        return `<img src="./shopping-basket.png" alt="">
+        <stong> 
+        Cart: </strong>(${this.totalPrice} UAH, ${this.quantityInCart} qt) `;
+    }
+    get renerCart(){
+        
     }
 }
